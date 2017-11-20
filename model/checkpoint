@@ -1,0 +1,2 @@
+model_checkpoint_path: "/notebooks/TensorFlow/ChatBot-1/model/model.tflearn"
+all_model_checkpoint_paths: "/notebooks/TensorFlow/ChatBot-1/model/model.tflearn"

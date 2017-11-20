@@ -1,0 +1,38 @@
+{"intents": [
+        {"tag": "saludo",
+        "patterns": ["Hola", "Como estas?", "Hay alguien ahi?", "Hola", "Buen dia"],"responses": ["Hola, gracias por visitar", "Me alegro de volver a verlo", "Hola, como puedo ayudarlo?"],
+        "context_set": ""
+        },
+        {"tag": "despedida",
+        "patterns": ["Adios", "Hasta luego"],
+        "responses": ["Nos vemos mas tarde, gracias por visitarnos", "Que tengas un buen daa", "¡Adios! Vuelve pronto"]
+        },
+        {"tag": "agradecimiento",
+        "patterns": ["Gracias", "Muchas Gracias", "Eso es util"],
+        "responses": ["¡Feliz de ayudar!", "¡En cualquier momento!", "De nada!"]
+        },
+        {"tag": "hora",
+        "patterns": ["Que horas tienen abierto?", "Cuales son sus horarios?"],"responses": ["Estamos abiertos todos los dias de 9 a.m. a 9 p.m.", "Nuestro horario es de 9 a.m. a 9 p.m. todos los dias"]
+        },
+        {"tag": "pizzas",
+        "patterns": ["Que pizzas tienes?", "Que tipo de pizzas hay?", "Pizzas?" ],"responses": ["Tenemos pizzas especial, extrabaganza, hawaiana", "Te ofrecemos especial, extrabaganza, hawaiana"]
+        },
+        {"tag": "pagos",
+        "patterns": ["Aceptan tarjetas de credito?", "Acepta Mastercard?", "Solo efectivo aceptan?" ],
+        "responses": ["Aceptamos VISA, Mastercard y AMEX", "Aceptamos la mayoría de las principales tarjetas de credito"]
+        },
+        {"tag": "abiertohoy",
+        "patterns": ["Esta abierto hoy?", "Abren hoy?", "Cual es su horario hoy?"],"responses": ["Estamos abiertos todos los dias de 9 a.m. a 9 p.m.", "Nuestro horario es de 9 a.m. a 9 p.m. todos los dias"]
+        },
+        {"tag": "compra",
+        "patterns": ["Quiero una pizza?", "Me gustaria una pizza", "Como funciona esto?" ],
+        "responses": ["Quieres comprar una pizza?"],
+        "context_set": "pedidopizza"
+        },
+        {"tag": "pedido",
+        "patterns": ["Si"],
+        "responses": ["Para realizar tu pedido, por favor llame al 72727272", "Llamanos al 72727272"],
+        "context_filter": "pedidopizza"
+        }
+   ]
+}
